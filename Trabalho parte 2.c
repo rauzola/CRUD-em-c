@@ -51,7 +51,7 @@ int main() {
                 printf("Registro adicionado com sucesso!\n");
                 break;
 
-            case 2: // Listar todos os registros
+           case 2: // Listar todos os registros
                 system("cls"); // Limpa a tela no Windows
 
                 printf("\n==============================\n");
@@ -64,7 +64,7 @@ int main() {
                         printf("Nome: %s\n", nomes[i]);
                         printf("Idade: %d\n", idades[i]);
                         printf("Telefone: %s\n", telefones[i]);
-                        printf("Endereco: %s\n");
+                        printf("Endereco: %s\n", enderecos[i]);
                     }
                 } else {
                     printf("Nenhum registro cadastrado ainda.\n");
@@ -95,7 +95,7 @@ int main() {
                         printf("Telefone inválido. Digite novamente: ");
                         scanf("%*s"); // Limpa o buffer de entrada
                     }
-                    printf("Digite o novo endereço: ");
+                    printf("Digite o novo endereco: ");
                     scanf(" %[^\n]", enderecos[id_para_atualizar - 1]);
                     printf("Registro atualizado com sucesso!\n");
                 } else {
